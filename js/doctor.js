@@ -11,8 +11,8 @@ Doctor.prototype.findDoctor = function(medicalIssue, state) {
       doctorArray.push(response.data[i].practices[0].name + "<br>" + "Phone: " + response.data[i].practices[0].phones[0].number + "<br>" + "City: " + response.data[i].practices[0].visit_address.city);
     } for(var j=0; j<doctorArray.length; j++) {
       $('.search-result').append("<li>" + doctorArray[j] + "</li>");
-  }
-})
+    }
+  })
   .fail(function(error) {
     $('.search-result').text(error.responseJSON.message);
   });
