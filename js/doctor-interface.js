@@ -2,7 +2,7 @@ var Doctor = require('./../js/doctor.js').doctorModule;
 var apiKey = require('./../.env').apiKey;
 
 function displayDoctor(doctor) {
-  $('.search-result').append("<li>" + doctor.data.practices.name + "</li>");
+  $('.search-result').append("<li>" + doctor.data + "</li>");
 }
 
 $(document).ready(function() {
