@@ -1,9 +1,8 @@
 var Doctor = require('./../js/doctor.js').doctorModule;
 var apiKey = require('./../.env').apiKey;
-
-function displayDoctor(doctor) {
-  $('.search-result').append("<li>" + doctor.data + "</li>");
-}
+var displayDoctor = function(doctorArray) {
+  $('.search-result').append("<li>" + doctorArray + "</li>");
+};
 
 $(document).ready(function() {
   var currentDoctor = new Doctor();
