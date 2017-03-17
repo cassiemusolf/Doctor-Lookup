@@ -1,7 +1,6 @@
 var Doctor = require('./../js/doctor.js').doctorModule;
 var apiKey = require('./../.env').apiKey;
 
-
 $(document).ready(function() {
   var currentDoctor = new Doctor();
   $("#find-doctor").submit(function(event) {
@@ -11,6 +10,5 @@ $(document).ready(function() {
     var state = $('#state').val();
     $('#state').val("");
     currentDoctor.findDoctor(medicalIssue, state);
-
   });
 });

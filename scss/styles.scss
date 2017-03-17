@@ -4,5 +4,41 @@
 
 #click {
   margin-bottom: 30px;
-  margin-top: 30px; 
+  margin-top: 30px;
+}
+
+.jumbotron {
+  background-image: url(http://www.thepillowofhealth.com/wp-content/uploads/2015/10/bigstock-Medical-physician-doctor-hands-84721406.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+
+.container {
+  font-family: 'Roboto Slab', serif;
+}
+
+.title {
+  margin: 20px;
+  font-family: 'Roboto Slab', serif;
+}
+
+form {
+  border: 1px black solid;
+  padding: 10px;
+  padding-top: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: 'Roboto Slab', serif;
+}
+
+h3  {
+  text-align: center;
+  font-weight: lighter;
+  font-family: 'Roboto Slab', serif;
+}
+
+li {
+  font-size: 20px;
 }
