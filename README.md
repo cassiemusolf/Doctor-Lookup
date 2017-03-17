@@ -11,6 +11,7 @@ _This web application was built to be able to search for doctors based on certai
 ## Setup/Installation Requirements
 
 * Clone to local machine.
+* Go to https://developer.betterdoctor.com/ to sign up to get an   API Key. Input that key into a .env file and name it variable exports.apiKey.
 * Use command "npm install" in command prompt/shell.
 * Use command "bower install" to start server.
 * When ready to launch page run "gulp build" and "gulp serve".
