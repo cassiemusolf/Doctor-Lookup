@@ -8,7 +8,7 @@ Doctor.prototype.findDoctor = function(medicalIssue, state) {
     $('.search-count').text("The number of doctors in "  + state + " state that can help you with the medical issue " + medicalIssue  + " is " + response.meta.total + ". Here is a list of " + response.meta.count + " of them.");
     var doctorArray = [];
     for(var i=0; i<100; i ++) {
-      doctorArray.push(response.data[i].practices[0].name + "<br>" + "Website: " + response.data[i].practices[0].website + "<br>" + "City: " + response.data[i].practices[0].visit_address.city);
+      doctorArray.push(response.data[i].practices[0].name + "<br>" + "Phone: " + response.data[i].practices[0].phones[0].number + "<br>" + "City: " + response.data[i].practices[0].visit_address.city);
     } for(var j=0; j<doctorArray.length; j++) {
       $('.search-result').append("<li>" + doctorArray[j] + "</li>");
   }
